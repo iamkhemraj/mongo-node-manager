@@ -1,0 +1,1 @@
+#### Monogo Node Manager ####
