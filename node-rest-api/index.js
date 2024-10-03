@@ -1,24 +1,24 @@
 const dbConnect = require("./dbconn/dbconnection");
 
 
-insertData();
-async function insertData() {
-  try {
-    let db = await dbConnect();
-    let collection = db.collection('admin');
+// insertData();
+// async function insertData() {
+//   try {
+//     let db = await dbConnect();
+//     let collection = db.collection('admin');
 
-    // Inserting data (name, email, password)
-    let data = await collection.insertOne({
-      name: "John Doe",
-      email: "johndoe@example.com",
-      password: "securepassword123"
-    });
+//     // Inserting data (name, email, password)
+//     let data = await collection.insertOne({
+//       name: "John Doe",
+//       email: "johndoe@example.com",
+//       password: "securepassword123"
+//     });
 
-    console.log('Data inserted:', data);
-  } catch (error) {
-    console.error('Error inserting data:', error);
-  }
-}
+//     console.log('Data inserted:', data);
+//   } catch (error) {
+//     console.error('Error inserting data:', error);
+//   }
+// }
 
 
 fetchData();
